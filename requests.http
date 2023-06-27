@@ -1,0 +1,25 @@
+get http://localhost:3000/cards
+
+
+###
+post http://localhost:3000/cards
+Content-Type: application/json
+
+{
+  "term": "test card 2",
+  "description": "a second test card"
+}
+
+
+###
+delete http://localhost:3000/cards/3
+
+
+###
+patch http://localhost:3000/cards/4
+Content-Type: application/json
+
+{
+  "term": "test card 3",
+  "description": "a third test card"
+}
